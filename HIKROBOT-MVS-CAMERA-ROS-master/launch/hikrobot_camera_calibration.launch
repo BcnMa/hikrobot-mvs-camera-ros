@@ -1,0 +1,6 @@
+<launch>
+    <rosparam file="$(find hikrobot_camera)/config/camera_with_calibration.yaml" command="load"/>
+    <rosparam file="$(find hikrobot_camera)/config/real_calibration.yaml" command="load" />
+    <node pkg="hikrobot_camera" type="hikrobot_camera" name="hikrobot_camera" respawn="true" output="screen" /> 
+
+</launch>
